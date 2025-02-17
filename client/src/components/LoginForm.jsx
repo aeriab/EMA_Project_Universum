@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./LoginForm.css"; // Import CSS for styling
-import logo from '../Team9LogoTemporary.png';
+import logo from '../tempLogoImage.jpg';
 import { globalState, updateGlobalState } from "../global.js";
 
 const LoginForm = ({ onLogin }) => {
