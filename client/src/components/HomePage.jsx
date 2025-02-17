@@ -34,7 +34,7 @@ const HomePage = ({ onLogout }) => {
           <span>{globalState.username}</span>
         </div>
         <div className="container">
-          <h1>Welcome to our attention training web app !!</h1>
+          <h1>Welcome to our EMA web app !! This is currently under construction.</h1>
         </div>
       </form>
     </div>
