@@ -25,23 +25,52 @@ const LoginForm = ({ onLogin }) => {
     console.log("Logging in with:", { username, password });
 
     backendData.users.map((user, i) => {
-      if (username === user) {
-        usernameFound = true;
-        console.log("Username found!");
-        if (password === "admin") {
-          console.log("Password correct! Logging in...");
-          globalState.username = username;
-          globalState.isLoggedIn = true;
-          updateGlobalState(username, true);
-          onLogin();
-        } else {
-          alert("Invalid credentials. Please try again.");
-        }
-      }
+
+      console.log("Password correct! Logging in...");
+      globalState.username = username;
+      globalState.isLoggedIn = true;
+      updateGlobalState(username, true);
+      onLogin();
+
+      // if (username === user) {
+      //   usernameFound = true;
+      //   console.log("Username found!");
+      //   if (password === "admin") {
+      //     console.log("Password correct! Logging in...");
+      //     globalState.username = username;
+      //     globalState.isLoggedIn = true;
+      //     updateGlobalState(username, true);
+      //     onLogin();
+      //   } else {
+      //     alert("Invalid credentials. Logging into dev_test.");
+      //     globalState.username = username;
+      //     globalState.isLoggedIn = true;
+      //     updateGlobalState(username, true);
+      //     onLogin();
+      //   }
+      // }
+      // else {
+      //   alert("creating account");
+      //   usernameFound = true;
+      //   console.log("Username found!");
+      //   if (password === "admin") {
+      //     console.log("Password correct! Logging in...");
+      //     globalState.username = username;
+      //     globalState.isLoggedIn = true;
+      //     updateGlobalState(username, true);
+      //     onLogin();
+      //   } else {
+      //     alert("Invalid credentials. Logging into dev_test.");
+      //     globalState.username = username;
+      //     globalState.isLoggedIn = true;
+      //     updateGlobalState(username, true);
+      //     onLogin();
+      //   }
+      // }
     })
 
     if (!usernameFound) {
-      alert("Username not found.");
+      alert("Creating account.");
     }
   };
 
@@ -120,7 +149,7 @@ const LoginForm = ({ onLogin }) => {
           />
 
           <button type="submit" onClick={handleSubmit}>Login</button>
-          <button type="create" onClick={handleCreate}>Create Account</button>
+          {/* <button type="create" onClick={handleCreate}>Create Account</button> */}
           <label>
             <input type="checkbox" name="remember" /> Remember me
           </label>
@@ -128,7 +157,7 @@ const LoginForm = ({ onLogin }) => {
 
         <div className="container footer">
           <button type="button" className="cancelbtn" onClick={handleCancel}>Cancel</button>
-          <span className="psw">Forgot <a href="#">password?</a></span>
+          {/* <span className="psw">Forgot <a href="#">password?</a></span> */}
         </div>
       </form>
     </div>
