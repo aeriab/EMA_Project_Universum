@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/EMA_Project_Site/static/css/main.ada183cc.css",
-    "main.js": "/EMA_Project_Site/static/js/main.2e44751e.js",
-    "static/media/tempLogoImage.jpg": "/EMA_Project_Site/static/media/tempLogoImage.5cd5227e075aa3d59271.jpg",
-    "index.html": "/EMA_Project_Site/index.html",
-    "main.ada183cc.css.map": "/EMA_Project_Site/static/css/main.ada183cc.css.map",
-    "main.2e44751e.js.map": "/EMA_Project_Site/static/js/main.2e44751e.js.map"
+    "main.css": "/EMA_Project_Universum/static/css/main.ada183cc.css",
+    "main.js": "/EMA_Project_Universum/static/js/main.ebe59c6a.js",
+    "static/media/tempLogoImage.jpg": "/EMA_Project_Universum/static/media/tempLogoImage.5cd5227e075aa3d59271.jpg",
+    "index.html": "/EMA_Project_Universum/index.html",
+    "main.ada183cc.css.map": "/EMA_Project_Universum/static/css/main.ada183cc.css.map",
+    "main.ebe59c6a.js.map": "/EMA_Project_Universum/static/js/main.ebe59c6a.js.map"
   },
   "entrypoints": [
     "static/css/main.ada183cc.css",
-    "static/js/main.2e44751e.js"
+    "static/js/main.ebe59c6a.js"
   ]
 }
